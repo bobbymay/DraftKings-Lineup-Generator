@@ -4,11 +4,11 @@ import Foundation
 class NHL: Lineups, Algorithm {
 	
 	// Positions
-	var Cs = [Int: Info]()
-	var Ws = [Int: Info]()
-	var Ds = [Int: Info]()
-	var Gs = [Int: Info]()
-	var UTIL = [Info]()
+	private var Cs = [Int: Info]()
+	private var Ws = [Int: Info]()
+	private var Ds = [Int: Info]()
+	private var Gs = [Int: Info]()
+	private var UTIL = [Info]()
 	
 	
 	func loadData() {

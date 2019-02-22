@@ -4,12 +4,12 @@ import Foundation
 class NFL: Lineups, Algorithm {
 	
 	// Positions
-	var QBs = [Info]()
-	var RBs = [Int: Info]()
-	var WRs = [Int: Info]()
-	var TEs = [Int: Info]()
-	var Ds = [Int: Info]()
-	var FLEXs = [Info]()
+	private var QBs = [Info]()
+	private var RBs = [Int: Info]()
+	private var WRs = [Int: Info]()
+	private var TEs = [Int: Info]()
+	private var Ds = [Int: Info]()
+	private var FLEXs = [Info]()
 
 	
 	func loadData() {

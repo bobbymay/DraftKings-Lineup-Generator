@@ -14,7 +14,7 @@ class Lineups {
 	var minPoints = 0.0
 	static var count = 0
 	static var final = [Double: [Int]]() // points: ids
-	static var delegate: Algorithm!
+	private static var delegate: Algorithm!
 	
 	
 	/// Set delegate

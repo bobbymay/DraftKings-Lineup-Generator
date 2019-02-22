@@ -4,15 +4,15 @@ import Foundation
 class NBA: Lineups, Algorithm {
 	
 	// Positions
-	var PGs = [Int: Info]()
-	var SGs = [Int: Info]()
-	var SFs = [Int: Info]()
-	var PFs = [Int: Info]()
-	var Cs = [Int: Info]()
-	var Gs = [Info]()
-	var Fs = [Info]()
-	var Us = [Info]()
-	var C = [Info]()
+	private var PGs = [Int: Info]()
+	private var SGs = [Int: Info]()
+	private var SFs = [Int: Info]()
+	private var PFs = [Int: Info]()
+	private var Cs = [Int: Info]()
+	private var Gs = [Info]()
+	private var Fs = [Info]()
+	private var Us = [Info]()
+	private var C = [Info]()
 	
 	
 	func loadData() {

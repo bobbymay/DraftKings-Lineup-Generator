@@ -26,7 +26,7 @@ struct Points {
 	
 	
 	/// Parse individual rows
-	static func parse(row: String) -> (info: [String], points: Double)? {
+	private static func parse(row: String) -> (info: [String], points: Double)? {
 		
 		// Skips empty rows
 		if !row.contains(",") { return nil }
@@ -46,7 +46,7 @@ struct Points {
 	
 	
 	/// Assigns points to players
-	static func set(_ info: [String]) {
+	private static func set(_ info: [String]) {
 
 		let name = String.removeSpaces(info[0])
 		
