@@ -17,7 +17,7 @@ struct Info {
 		// Rows that holds clear info
 		var row = [Int]()
 		
-		// Sets the rows that are needed to get player info
+		// Sets the rows that are needed to get player info. This corresponds to the CSV file downloaded from DraftKings
 		switch Sport.sport {
 		case .NFL, .NHL: row = [17, 16, 19, 21, 20, 14]
 		default: row = [16, 15, 18, 20, 19, 13] // NBA
