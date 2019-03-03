@@ -10,16 +10,16 @@ protocol Algorithm {
 
 class Lineups {
 	
-	var counter = 0
+	private var counter = 0
 	var minPoints = 0.0
 	static var count = 0
 	static var final = [Double: [Int]]() // points: ids
-	private static var delegate: Algorithm!
+ private static var delegate: Algorithm!
 	
 	
 	/// Set delegate
-	static func setDelegate() {
-		switch Sport.sport {
+	static func setLeague() {
+		switch Sport.league {
 		case .NBA: delegate = NBA()
 		case .NFL: delegate = NFL()
 		case .NHL: delegate = NHL()

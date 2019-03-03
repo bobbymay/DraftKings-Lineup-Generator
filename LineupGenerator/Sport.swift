@@ -5,7 +5,7 @@ enum Sport {
 	
 	case None, NFL, NHL, NBA
 	
-	static var sport = Sport.None
+	static var league = Sport.None
 	
 
 	static func set() {
@@ -16,16 +16,16 @@ enum Sport {
 		for contest in DKEntries.contestNames {
 			sport.keys.forEach({
 				if contest.contains($0) {
-					Sport.sport = sport[$0]! }
+					Sport.league = sport[$0]! }
 			})
 		}
 		
-		guard Sport.sport != .None else {
+		guard Sport.league != .None else {
 			fatalError("ERROR: Find Sport")
 		}
 		
 		Print.sport()
-		Lineups.setDelegate()
+		Lineups.setLeague()
 	}
 	
 	

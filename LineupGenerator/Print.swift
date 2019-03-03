@@ -9,7 +9,7 @@ struct Print {
 	
 	/// Prints sport that lineups are being generated for
 	static func sport() {
-		print("Sport: \(Sport.sport)")
+		print("Sport: \(Sport.league)")
 	}
 	
 	

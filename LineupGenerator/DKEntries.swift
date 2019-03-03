@@ -106,7 +106,7 @@ struct DKEntries {
 					for i in 0...info.count - 2 { // "2" because the comma should not be at the end
 						s.append("\(info[i]),")
 					}
-					s.append("\(info[info.count - 1])")
+					s.append("\(info[info.count - 1])\r")
 					
 					// Write row to new file
 					newData.append(s)
@@ -116,7 +116,7 @@ struct DKEntries {
 				}
 			} else {
 				// Write data to new file
-				newData.append(row)
+				newData.append("\(row)\r")
 			}
 			
 		}
