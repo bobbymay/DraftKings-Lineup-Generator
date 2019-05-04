@@ -1,7 +1,7 @@
 import Foundation
 
 
-class NHL: Lineups, Algorithm {
+final class NHL: Lineups, Algorithm {
 	
 	// Positions
 	private var Cs = [Int: Info]()

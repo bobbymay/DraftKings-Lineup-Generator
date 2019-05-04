@@ -1,7 +1,7 @@
 import Foundation
 
 
-class NFL: Lineups, Algorithm {
+final class NFL: Lineups, Algorithm {
 	
 	// Positions
 	private var QBs = [Info]()

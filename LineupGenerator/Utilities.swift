@@ -15,8 +15,6 @@ struct File {
 		} catch {
 			fatalError("Failed to read \(file)")
 		}
-		
-		return nil
 	}
 	
 }

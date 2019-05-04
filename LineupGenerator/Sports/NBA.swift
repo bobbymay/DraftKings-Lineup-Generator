@@ -1,7 +1,7 @@
 import Foundation
 
 
-class NBA: Lineups, Algorithm {
+final class NBA: Lineups, Algorithm {
 	
 	// Positions
 	private var PGs = [Int: Info]()

@@ -58,7 +58,7 @@ class Lineups {
 			}
 		}
 		
-		if let index = players.index(where: {$0.id == id}) { return index }
+		if let index = players.firstIndex(where: {$0.id == id}) { return index }
 		return -1
 	}
 	
