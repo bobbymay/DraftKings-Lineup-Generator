@@ -19,7 +19,6 @@ struct File {
 	
 }
 
-// MARK: -
 
 extension String {
 	
@@ -33,10 +32,8 @@ extension String {
 
 }
 
-// MARK: -
 
 extension Int {
-	
 	
 	static func random(max: Int) -> Int {
 		return Int(arc4random_uniform(UInt32(Int(max))))

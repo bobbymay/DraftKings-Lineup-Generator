@@ -13,22 +13,6 @@
 
 #### Console after running application:
 ```
-Sport: NBA
-234 players
-10,000 attempts
-3 lineups 
-
-10% - Generated: 1000
-20% - Generated: 2000
-30% - Generated: 3000
-40% - Generated: 4000
-50% - Generated: 5000
-60% - Generated: 6000
-70% - Generated: 7000
-80% - Generated: 8000
-90% - Generated: 9000
-100% - Generated: 10000
-
 _____________ 1 _____________
 Points: 261.7 | Salary: 50000
 PG/SG: (BKN) D'Angelo Russell, 40.0, $7300
