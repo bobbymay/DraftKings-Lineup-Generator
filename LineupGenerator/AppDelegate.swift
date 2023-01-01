@@ -2,7 +2,6 @@ import Cocoa
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
-    
     @IBOutlet weak var window: NSWindow!
     
     // How many times lineups are generated
@@ -31,7 +30,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         sp.allowsOtherFileTypes = false
         sp.isExtensionHidden = false
         
-        guard let url = sp.url, sp.runModal().rawValue == NSApplication.ModalResponse.OK.rawValue else { return }
+        guard let url = sp.url, sp.runModal().rawValue == NSApplication.ModalResponse.OK.rawValue else {
+            return
+        }
         
         do {
             try entries.write(to: url, atomically: true, encoding: String.Encoding.utf8)

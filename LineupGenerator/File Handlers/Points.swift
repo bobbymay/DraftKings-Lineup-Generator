@@ -16,7 +16,7 @@ struct Points {
         
         for row in rows {
             if let player = parse(row: row) {
-                Points.set(player.info)
+                Player.set(player.info)
             }
         }
         
@@ -41,18 +41,6 @@ struct Points {
         
         return nil
     }
-    
-    
-    /// Assigns points to players
-    private static func set(_ info: [String]) {
-        let name = String.removeSpaces(info[0])
-        
-        guard let id = Player.name[name] else { return }
-        
-        if let points = Double(String.removeSpaces(info[4])) {
-            Player.info[id]?.points = points
-        }
-        
-    }
+
     
 }

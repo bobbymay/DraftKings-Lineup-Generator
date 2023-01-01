@@ -9,7 +9,6 @@ protocol Algorithm {
 // MARK: -
 
 class Lineups {
-    
     private var counter = 0
     var minPoints = 0.0
     static var count = 0
@@ -82,7 +81,10 @@ class Lineups {
     
     /// Sets minimum value and deletes lowest lineup
     private func setMin() {
-        guard Lineups.final.count > Lineups.count else { return } // less than minimum
+        guard Lineups.final.count > Lineups.count else { // less than minimum
+            return
+        }
+        
         if let minimum = Lineups.final.keys.min() {
             Lineups.final[minimum] = nil // delete lowest lineup
             minPoints = minimum // new min
@@ -93,6 +95,7 @@ class Lineups {
     /// Get new dictionary key (points)
     func lineupKey(_ points: Double) -> Double {
         var p = points
+        
         repeat {
             p += 0.01
         } while Lineups.final[p] != nil
@@ -155,7 +158,7 @@ extension Lineups {
         let c = NSCountedSet()
         for t in team { c.add(t) } // add up all teams
         for t in team { if c.count(for: t) > 4 { return false } } // if more than 4: false
-        return 	true
+        return true
     }
     
 }

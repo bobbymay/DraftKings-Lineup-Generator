@@ -4,7 +4,6 @@ import Foundation
 struct File {
 	
 	static func read(file: String) -> String? {
-		
 		guard let path = Bundle.main.path(forResource: file, ofType: "csv") else {
 			fatalError("\(file) does not exist")
 		}
@@ -23,8 +22,7 @@ struct File {
 extension String {
 	
 	static func removeSpaces(_ s: String) -> String {
-		
-		let parentheses = s.replacingOccurrences(of: "\"", with: "", options: NSString.CompareOptions.literal, range:nil)
+		let parentheses = s.replacingOccurrences(of: "\"", with: "", options: NSString.CompareOptions.literal, range: nil)
 		let trim = parentheses.trimmingCharacters(in: .whitespacesAndNewlines)
 		
 		return trim
@@ -39,9 +37,7 @@ extension Int {
 		return Int(arc4random_uniform(UInt32(Int(max))))
 	}
 	
-	
 	static func addCommas(_ number: Int) -> String {
-		
 		let formatter = NumberFormatter()
 		formatter.numberStyle = NumberFormatter.Style.decimal
 		
@@ -51,7 +47,6 @@ extension Int {
 		
 		return numberWithCommas
 	}
-	
 	
 }
 
